@@ -1,27 +1,43 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Login from "../views/Login.vue";
+import MainPage from "../views/MainPage.vue";
+import Bootstrap from "../views/Bootstrap.vue";
+import bootstrapChild from "./bootstrap.js";
+import Lazyload from "../views/LazyLoad.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "主页面",
+    meta: {
+      isAuth: true,
+    },
+    component: MainPage,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
+    path: "/login",
+    name: "登录页",
+    component: Login,
+  },
+  {
+    path: "/lazyload",
+    name: "图片懒加载",
+    component: Lazyload,
+  },
+  {
+    path: "/bootstrap",
+    name: "Bootstrap",
+    component: Bootstrap,
+    params: { id: 0 },
+    children: [...bootstrapChild],
+  },
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
