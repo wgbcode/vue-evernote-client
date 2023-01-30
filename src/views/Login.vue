@@ -50,7 +50,7 @@
     <div class="alert alert-danger alert-position"
          v-show="rigisterFail">注册失败</div>
     <div class="alert alert-success alert-position"
-         v-show="rigisterSuccess">已成功登录</div>
+         v-show="loginSuccess">已成功登录</div>
     <div class="alert alert-danger alert-position"
          v-show="loginFail">登录失败</div>
   </div>
@@ -121,7 +121,7 @@ export default {
         this.authLogin({ username: this.username, password: this.password })
           .then((data) => {
             if (data.status === 200) {
-              this.$router.push("/main")
+              // this.$router.push("/main")
             } else {
               this.loginFail = true
               this.timer = setTimeout(() => {

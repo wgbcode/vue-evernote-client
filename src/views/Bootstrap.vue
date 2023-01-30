@@ -38,18 +38,18 @@
       </div>
       <div>
         <h2>Bootstrap 插件</h2>
-        <router-link to="/bootstrap/">过渡效果</router-link>
-        <router-link to="/bootstrap/">模态框</router-link>
-        <router-link to="/bootstrap/">下拉菜单</router-link>
-        <router-link to="/bootstrap/">滚动监听</router-link>
-        <router-link to="/bootstrap/">标签页</router-link>
-        <router-link to="/bootstrap/">提示工具</router-link>
-        <router-link to="/bootstrap/">弹出框</router-link>
-        <router-link to="/bootstrap/">警告框</router-link>
-        <router-link to="/bootstrap/">按钮</router-link>
-        <router-link to="/bootstrap/">折叠</router-link>
-        <router-link to="/bootstrap/">轮播</router-link>
-        <router-link to="/bootstrap/">附加导航</router-link>
+        <router-link to="/bootstrap/transition">过渡效果</router-link>
+        <router-link to="/bootstrap/modal">模态框</router-link>
+        <router-link to="/bootstrap/dropdownplugin">下拉菜单</router-link>
+        <router-link to="/bootstrap/scrollspy">滚动监听</router-link>
+        <router-link to="/bootstrap/tab">标签页</router-link>
+        <router-link to="/bootstrap/tooltip">提示工具</router-link>
+        <router-link to="/bootstrap/popover">弹出框</router-link>
+        <router-link to="/bootstrap/alertplugin">警告框</router-link>
+        <router-link to="/bootstrap/buttonplugin">按钮</router-link>
+        <router-link to="/bootstrap/collapseplugin">折叠</router-link>
+        <router-link to="/bootstrap/carousel">轮播</router-link>
+        <router-link to="/bootstrap/affix">附加导航</router-link>
       </div>
     </div>
     <div class="bootstrap-main">
